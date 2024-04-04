@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import Logo from "/public/images/logo-dark.png";
+import Logo from "/public/icons/darkologo.png";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { LiaTimesSolid } from "react-icons/lia";
@@ -11,10 +11,11 @@ const Navbar = () => {
   const [isNavShowing, setIsNavShowing] = useState(false);
 
   return (
-    <nav className="py-3 border-[#DEE1E6] border-b-2">
+    <nav className="py-7 border-[#DEE1E6] border-b-2">
       <div className="container flex items-center justify-between px-2">
-        <div className="">
-          <Image src={Logo} alt="Logo" width="150" height="180" />
+        <div className="flex items-center gap-2">
+          <Image src={Logo} alt="Logo" height={40} width={40} loading="lazy" />
+          <p className="font-bold font-inter text-[#100A42]">HelpMeOut</p>
         </div>
         <div className="items-center gap-9 hidden md:flex">
           <Link href="#" className="text-[#141414] font-semibold font-workSans">
