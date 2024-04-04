@@ -41,3 +41,21 @@ export const how_it_works = [
       "Recipients can access your video effortlessly through the provided link, with our user-friendly interface suitable for everyone.",
   },
 ];
+
+export const footer_links = [
+  {
+    id: 0,
+    head: "Menu",
+    links: ["Home", "Converter", "How it Works"],
+  },
+  {
+    id: 1,
+    head: "About Us",
+    links: ["About", "Contact Us", "Privacy Policy"],
+  },
+  {
+    id: 2,
+    head: "Screen Record",
+    links: ["Browser Window", "Desktop", "Application"],
+  },
+];

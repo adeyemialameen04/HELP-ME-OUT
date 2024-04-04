@@ -10,3 +10,9 @@ export interface HowItWorks {
   details: string;
   id: number;
 }
+
+export interface FooterLink {
+  id: number;
+  head: string;
+  links: string[];
+}

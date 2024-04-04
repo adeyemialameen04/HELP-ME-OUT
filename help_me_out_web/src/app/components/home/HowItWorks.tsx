@@ -1,4 +1,4 @@
-import { HowItWorks } from "@/@types";
+import type { HowItWorks } from "@/@types";
 import {
   Card,
   CardContent,

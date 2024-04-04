@@ -81,6 +81,11 @@
   margin: 0 auto;
 }
 
+.full-width {
+  margin-left: -36.36%;
+  margin-right: -36.36%;
+}
+
 @media (min-width: 780px) {
   .mi-grid {
     grid-template-columns: 1fr 1.4fr;

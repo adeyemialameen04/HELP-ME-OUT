@@ -23,8 +23,7 @@ const Features = () => {
                   alt={feature.title}
                   width={40}
                   height={40}
-                  objectFit="cover"
-                  className="min-w-[30px]"
+                  className="min-w-[30px] object-cover"
                 />
               </div>
               <div className="flex flex-col gap-1 md:gap-2">
