@@ -12,15 +12,15 @@ const Navbar = () => {
 
   return (
     <nav className="py-3 border-[#DEE1E6] border-b-2">
-      <div className="container flex items-center max-w-full justify-between px-2">
+      <div className="container flex items-center justify-between px-2">
         <div className="">
           <Image src={Logo} alt="Logo" width="150" height="180" />
         </div>
         <div className="items-center gap-9 hidden md:flex">
-          <Link href="#" className="text-[#141414] font-semibold">
+          <Link href="#" className="text-[#141414] font-semibold font-workSans">
             Features
           </Link>
-          <Link href="#" className="text-[#141414] font-semibold">
+          <Link href="#" className="text-[#141414] font-semibold font-workSans">
             How it works
           </Link>
         </div>

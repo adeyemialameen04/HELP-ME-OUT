@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -34,9 +39,9 @@
 
     --radius: 0.5rem;
 
-    --width-sm: 98%;
+    --width-sm: 95%;
     --width-md: 92%;
-    --width-lg: 90%;
+    --width-lg: 87%;
   }
 
   .dark {
@@ -72,6 +77,7 @@
 
 .container {
   width: var(--width-sm);
+  /*background-color: green;*/
   margin: 0 auto;
 }
 
