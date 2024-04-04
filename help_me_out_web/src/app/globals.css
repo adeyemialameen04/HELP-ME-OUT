@@ -33,6 +33,10 @@
     --ring: 222.2 84% 4.9%;
 
     --radius: 0.5rem;
+
+    --width-sm: 98%;
+    --width-md: 92%;
+    --width-lg: 90%;
   }
 
   .dark {
@@ -63,6 +67,29 @@
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+.container {
+  width: var(--width-sm);
+  margin: 0 auto;
+}
+
+@media (min-width: 780px) {
+  .mi-grid {
+    grid-template-columns: 1fr 1.4fr;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .container {
+    width: var(--width-md);
+  }
+}
+
+@media (min-width: 1020px) {
+  .container {
+    width: var(--width-lg);
   }
 }
 
