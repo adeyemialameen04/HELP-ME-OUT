@@ -1,4 +1,6 @@
-export const features = [
+import { AccountSetting, Feature, FooterLink, HowItWorks, Vid } from "@/@types";
+
+export const features: Feature[] = [
   {
     icon: "/icons/circle.png",
     title: "Simple Screen Recording",
@@ -22,7 +24,7 @@ export const features = [
   },
 ];
 
-export const how_it_works = [
+export const how_it_works: HowItWorks[] = [
   {
     id: 1,
     title: "Record Screen",
@@ -42,7 +44,7 @@ export const how_it_works = [
   },
 ];
 
-export const footer_links = [
+export const footer_links: FooterLink[] = [
   {
     id: 0,
     head: "Menu",
@@ -76,5 +78,42 @@ export const transcript = [
   {
     time: "1.00",
     text: `First step. Open Facebook on your desktop or mobile device and locate "Marketplace" in the left-hand menu or at the top of the `,
+  },
+];
+
+export const accountSettings: AccountSetting[] = [
+  {
+    id: 0,
+    icon: "/icons/setting-2.png",
+    title: "Settings and Privacy",
+    showArr: true,
+  },
+  {
+    id: 1,
+    icon: "/icons/moon.png",
+    title: "Display and Accessibility",
+    showArr: true,
+  },
+  {
+    id: 2,
+    icon: "/icons/message-question.png",
+    title: "Help and Support",
+    showArr: true,
+  },
+  { id: 3, icon: "/icons/logout.png", title: "Logout", showArr: false },
+];
+
+export const all_videos: Vid[] = [
+  {
+    id: 0,
+    title: "How to create Facebook Ad listing",
+    date: "SEPTEMBER 23, 2023",
+    poster: "/images/frame1.png",
+  },
+  {
+    id: 1,
+    title: "How to create Facebook Ad listing",
+    date: "SEPTEMBER 23, 2023",
+    poster: "/images/frame2.png",
   },
 ];

@@ -13,21 +13,33 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import SelectLanguage from "./components/SelectLanguage";
 import TranscriptScroll from "./components/TranscriptScroll";
-import { useToast } from "@/components/ui/use-toast";
+//import { useToast } from "@/components/ui/use-toast";
+import { toast } from "sonner";
 import SentPopup from "./components/SentPopup";
 
 const Video = () => {
-  const { toast } = useToast();
+  //const { toast } = useToast();
   const [isEditing, setIsEditing] = useState(false);
   const [title, setTitle] = useState("Untitled_Video_20232509");
   const videoUrl = "https://www.helpmeout/Untitled_Video_20232509";
 
-  const handleCopyVidUrl = (url: string) => {
-    navigator.clipboard.writeText(url);
-    toast({
-      title: "You have copied",
-      description: `Copied the text: ${url}`,
-    });
+  const handleCopyVidUrl = async (url: string) => {
+    try {
+      const prevUrl = navigator.clipboard.readText();
+
+      await navigator.clipboard.writeText(url);
+      toast("Video Url has been copied", {
+        description: url,
+        action: {
+          label: "Undo",
+          onClick: async () => {
+            await navigator.clipboard.writeText(await prevUrl);
+          },
+        },
+      });
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   return (

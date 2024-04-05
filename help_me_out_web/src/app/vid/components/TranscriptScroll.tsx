@@ -8,15 +8,15 @@ const TranscriptScroll = () => {
     <ScrollArea className="h-72 w-full rounded-md">
       <div className="p-4">
         {transcript.map((transcript, index) => (
-          <>
-            <div key={index} className="flex gap-4 items-start">
+          <React.Fragment key={index}>
+            <div className="flex gap-4 items-start">
               <small className="font-normal text-[#141414] font-workSans">
                 {transcript.time}
               </small>
               <p className="font-medium font-inter">{transcript.text}</p>
             </div>
             <Separator className="my-4" />
-          </>
+          </React.Fragment>
         ))}
       </div>
     </ScrollArea>
