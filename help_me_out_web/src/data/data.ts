@@ -59,3 +59,22 @@ export const footer_links = [
     links: ["Browser Window", "Desktop", "Application"],
   },
 ];
+
+export const transcript = [
+  {
+    time: "0.01",
+    text: `First step. Open Facebook on your desktop or mobile device and locate "Marketplace" in the left-hand menu or at the top of the `,
+  },
+  {
+    time: "0.15",
+    text: `First step. Open Facebook on your desktop or mobile device and locate "Marketplace" in the left-hand menu or at the top of the `,
+  },
+  {
+    time: "0.30",
+    text: `First step. Open Facebook on your desktop or mobile device and locate "Marketplace" in the left-hand menu or at the top of the `,
+  },
+  {
+    time: "1.00",
+    text: `First step. Open Facebook on your desktop or mobile device and locate "Marketplace" in the left-hand menu or at the top of the `,
+  },
+];

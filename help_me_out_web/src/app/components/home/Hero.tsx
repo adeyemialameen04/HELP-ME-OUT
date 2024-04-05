@@ -9,7 +9,7 @@ const Hero = () => {
     <div className="grid grid-cols-1 mi-grid bg-white gap-10">
       <div className="flex flex-col gap-5 items-center md:items-start">
         <h4 className="text-[#141414] leading-[.95] font-bold text-[2rem] text-center md:text-left lg:text-[4rem]">
-          Show Them<br></br> Don't Just Tell
+          Show Them<br></br> Don&apos;t Just Tell
         </h4>
         <p className="text-grey text-lg text-center mb-5 md:text-left font-inter">
           Help your friends and loved ones by creating and sending videos on how

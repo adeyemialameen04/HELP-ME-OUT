@@ -18,6 +18,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import Link from "next/link";
 
 const formSchema = z.object({
   email: z.string().email("Invalid email address").min(2).max(50),
@@ -53,11 +54,11 @@ const Login = () => {
 
   return (
     <main className="py-[6rem]">
-      <div className="container flex flex-col gap-10">
-        <div className="flex items-center gap-2">
+      <div className="container flex flex-col gap-16">
+        <Link href={"/"} className="flex items-center gap-2">
           <Image src={Logo} alt="Logo" height={40} width={40} loading="lazy" />
           <p className="font-bold font-inter text-[#100A42]">HelpMeOut</p>
-        </div>
+        </Link>
         <div className="flex items-center gap-4 flex-col max-w-[550px] self-center">
           <div className="flex flex-col gap-4 items-center">
             <div className="text-center">
